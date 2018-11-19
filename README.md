@@ -1,3 +1,4 @@
+
 # infinitai-bot
 
 Chatbot for infinitai.io website
@@ -6,12 +7,17 @@ Chatbot for infinitai.io website
 
 This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com),
 
+ 
+# Basic Bot template
+This bot has been created using [Microsoft Bot Framework](https://dev.botframework.com),
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 - Use [LUIS](https://luis.ai) to implement core AI capabilities
 - Implement a multi-turn conversation using Dialogs
 - Handle user interruptions for such things as Help or Cancel
 - Prompt for and validate requests for information from the user
 
 # Prerequisite to run this bot locally
+<<<<<<< HEAD
 
 - Download the bot code from the Build blade in the Azure Portal
 - Update the `appsettings.json` file in the root of the bot project with the botFilePath and botFileSecret
@@ -19,6 +25,13 @@ This bot has been created using [Microsoft Bot Framework](https://dev.botframewo
 
 Your appsettings.json file should look like this
 
+=======
+- Download the bot code from the Build blade in the Azure Portal
+- Update the `appsettings.json` file in the root of the bot project with the botFilePath and botFileSecret 
+- You can find the botFilePath and botFileSecret in the Azure App Service application settings.
+
+Your appsettings.json file should look like this
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 ```bash
 {
     "botFilePath": "<copy value from App settings>",
@@ -26,6 +39,7 @@ Your appsettings.json file should look like this
 }
 ```
 
+<<<<<<< HEAD
 ## Run in Visual Studio
 
 - Open the .sln file with Visual Studio.
@@ -46,29 +60,54 @@ their bots on localhost or running remotely through a tunnel.
 
 ### Connect to bot using Bot Framework Emulator
 
+=======
+
+## Run in Visual Studio
+- Open the .sln file with Visual Studio.
+- Press F5.
+## Run in Visual Studio Code
+- Open the bot project folder with Visual Studio Code.
+- Bring up a terminal.
+- Type 'dotnet run'.
+## Testing the bot using Bot Framework Emulator
+[Microsoft Bot Framework Emulator](https://aka.ms/botframework-emulator) is a desktop application that allows bot developers to test and debug
+their bots on localhost or running remotely through a tunnel.
+- Install the Bot Framework Emulator from [here](https://aka.ms/botframework-emulator).
+### Connect to bot using Bot Framework Emulator
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 - Launch the Bot Framework Emulator
 - File -> Open bot and navigate to the bot project folder
 - Select `<your-bot-name>.bot` file
 
 # Deploy this bot to Azure
+<<<<<<< HEAD
 
 ## Publish from Visual Studio
 
+=======
+## Publish from Visual Studio
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 - Open the .PublishSettings file you find in the PostDeployScripts folder
 - Copy the userPWD value
 - Right click on the Project and click on "Publish..."
 - Paste the password you just copied and publish
 
 ## Publish using the CLI tools
+<<<<<<< HEAD
 
 You can use the [MSBot](https://github.com/microsoft/botbuilder-tools) Bot Builder CLI tool to clone and configure any services this sample depends on.
 To install all Bot Builder tools -
+=======
+You can use the [MSBot](https://github.com/microsoft/botbuilder-tools) Bot Builder CLI tool to clone and configure any services this sample depends on. 
+To install all Bot Builder tools - 
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 
 Ensure you have [Node.js](https://nodejs.org/) version 8.5 or higher
 
 ```bash
 npm i -g msbot chatdown ludown qnamaker luis-apis botdispatch luisgen
 ```
+<<<<<<< HEAD
 
 To clone this bot, run
 
@@ -78,6 +117,13 @@ msbot clone services -f deploymentScripts/msbotClone -n <BOT-NAME> -l <Azure-loc
 
 # Further reading
 
+=======
+To clone this bot, run
+```
+msbot clone services -f deploymentScripts/msbotClone -n <BOT-NAME> -l <Azure-location> --subscriptionId <Azure-subscription-id>
+```
+# Further reading
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [Bot basics](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
 - [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
@@ -86,3 +132,7 @@ msbot clone services -f deploymentScripts/msbotClone -n <BOT-NAME> -l <Azure-loc
 - [Azure Bot Service Introduction](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
 - [QnA Maker](https://qnamaker.ai)
+<<<<<<< HEAD
+=======
+
+>>>>>>> b3045a4e084d01c8626c9bdcfb0a976713d25097
