@@ -1,0 +1,2 @@
+D:\home\site\wwwroot\obj\Release\netcoreapp2.0\BasicBot.csprojAssemblyReference.cache
+D:\home\site\wwwroot\obj\Release\netcoreapp2.0\BasicBot.csproj.GenerateResource.cache
